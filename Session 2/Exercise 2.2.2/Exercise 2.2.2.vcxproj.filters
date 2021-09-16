@@ -15,40 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="addition.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="multiplication.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="subtraction.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="division.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="modulo.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="addition.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="multiplication.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="subtraction.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="division.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="modulo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

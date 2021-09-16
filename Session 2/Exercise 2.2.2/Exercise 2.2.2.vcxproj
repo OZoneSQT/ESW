@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{37ea9d3f-d2c3-4ac8-a492-680e1eb4cf0c}</ProjectGuid>
-    <RootNamespace>Exercise21</RootNamespace>
+    <ProjectGuid>{a928670d-0adf-4c71-b743-9c4918414ec0}</ProjectGuid>
+    <RootNamespace>Exercise222</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,19 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="addition.c" />
-    <ClCompile Include="division.c" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="modulo.c" />
-    <ClCompile Include="multiplication.c" />
-    <ClCompile Include="subtraction.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="addition.h" />
-    <ClInclude Include="division.h" />
-    <ClInclude Include="modulo.h" />
-    <ClInclude Include="multiplication.h" />
-    <ClInclude Include="subtraction.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

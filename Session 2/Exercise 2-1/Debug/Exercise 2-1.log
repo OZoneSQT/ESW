@@ -1,2 +1,8 @@
-﻿  main.c
+﻿  addition.c
+  division.c
+  main.c
+  modulo.c
+  multiplication.c
+  subtraction.c
+  Generating Code...
   Exercise 2-1.vcxproj -> C:\git\ESW\Session 2\Exercise 2-1\Debug\Exercise 2-1.exe

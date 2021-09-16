@@ -1,6 +1,6 @@
 #include "division.h"
 
-int esw_division(int a, int b)
+float esw_division(int a, int b)
 {
-	return (a / b);
+	return ((float)a / (float)b);
 }
