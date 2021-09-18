@@ -22,7 +22,7 @@ int main() {
 	// 
 	// OPS!! And the program do not stop
 	//
-	// Conclusion - The program access the wrong memmory locations
+	// Conclusion - The program access the wrong memory locations
 
 	printf("The string now says: \"%s\n", text);
 
