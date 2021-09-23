@@ -3,7 +3,6 @@
 // #include "my_string_func.h"
 
 #define MAX_LENGTH 1000
-#define FILENAME "my_text_file.txt"
 
 /*
 * 
@@ -38,19 +37,31 @@ int main()
 	char line[MAX_LENGTH];
 	char upper[MAX_LENGTH];
 	int line_length;
+	char string[1000];
 	
 
 	// Read txt file
-	FILE* ptr_file = fopen(FILENAME, "r");
+	FILE* ptr_file;
 	char buf[1000];
+	
+
+	ptr_file = fopen("my_text_file.txt", "r");
 	if (!ptr_file)
-		// perror("Error, asscessing file");
 		return 1;
 
+	/*
+	while (fgets(buf, 1000, ptr_file) != NULL)
+			++line_length;
+
+	printf("line count = %d\n", line_length);
+	*/
 
 	while (fgets(buf, 1000, ptr_file) != NULL)
-		printf("%s", buf);
+		puts(string);
 		
+		// printf("%s", buf);
+		
+	printf("%s", string);
 
 	/* Use a while loop to read input lines as long as there are any.
 	For each input line, print the length of the line as well as
@@ -78,5 +89,22 @@ int main()
 https://www.cplusplus.com/reference/cstdio/fgets/
 https://www.geeksforgeeks.org/fgets-gets-c-language/
 https://www.tutorialspoint.com/c_standard_library/c_function_fgets.htm
+
+#include <stdio.h>
+
+int main()
+{
+	FILE* pFile;
+	char mystring[100];
+
+	pFile = fopen("myfile.txt", "r");
+	if (pFile == NULL) perror("Error opening file");
+	else {
+		if (fgets(mystring, 100, pFile) != NULL)
+			puts(mystring);
+		fclose(pFile);
+	}
+	return 0;
+}
 
 */
