@@ -1,8 +1,10 @@
 #include <stdio.h>
+#i
 
-// #include "my_string_func.h"
+#include "my_string_func.h"
 
 #define MAX_LENGTH 1000
+#define FILENAME "my_text_file.txt"
 
 /*
 * 
@@ -24,44 +26,26 @@
 
 */
 
-/*
-* 
-* Viggo:
-*	Just loop through the line array and subtract 32 to the lowercase char to make it uppercase and put 
-*	that into the upper array, in this loop you can also keep a counter to keep track of the line length.
-*
-*/
+
+
 
 int main()
 {
 	char line[MAX_LENGTH];
 	char upper[MAX_LENGTH];
 	int line_length;
-	char string[1000];
-	
+	char buf[1000];
 
 	// Read txt file
-	FILE* ptr_file;
-	char buf[1000];
+	FILE* ptr_file = fopen(FILENAME, "r");	// Assign file pointer and add filename, en read mode;
 	
 
-	ptr_file = fopen("my_text_file.txt", "r");
+	// If file access/reading issues
 	if (!ptr_file)
+	{
+		perror("Unable to read file");	// print error
 		return 1;
-
-	/*
-	while (fgets(buf, 1000, ptr_file) != NULL)
-			++line_length;
-
-	printf("line count = %d\n", line_length);
-	*/
-
-	while (fgets(buf, 1000, ptr_file) != NULL)
-		puts(string);
-		
-		// printf("%s", buf);
-		
-	printf("%s", string);
+	}
 
 	/* Use a while loop to read input lines as long as there are any.
 	For each input line, print the length of the line as well as
@@ -69,16 +53,19 @@ int main()
 	NOTE You are NOT allowed to use the standard toupper(…)
 	function in string.h
 	*/
-
-	/*
-	while ( /* Something should go here */ /*) {
-		/* And here do the my_to_upper(…)*/ 
-		/*	printf("Length: %d\t%s\n", line_length, upper);
+	
+	// Read and add line to buffer
+/**/
+	while (buf != NULL)
+	{
+		printf("line: " + buf + " length: %d ", read_line(buf))
 	}
-	*/
-
-	fclose(ptr_file);
-
+*/
+/*
+	while ( /* Something should go here */) {
+		/* And here do the my_to_upper(…)*/
+	/*	printf("Length: %d\t%s\n", line_length, upper);
+	} */
 	return 0;
 }
 
