@@ -26,6 +26,13 @@ int read_line(char s[])
 
 }
 
+/*
+*
+* Viggo:
+*	Just loop through the line array and subtract 32 to the lowercase char to make it uppercase and put
+*	that into the upper array, in this loop you can also keep a counter to keep track of the line length.
+*
+*/
 void my_to_upper(char* str_in, char* str_out)
 {
 
