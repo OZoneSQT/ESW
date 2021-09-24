@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include <ctype.h>
 
-// #include "my_string_func.h"
+//#include "my_string_func.h"
 
 #define MAX_LENGTH 1000
 #define FILENAME "my_text_file.txt"
 
 /*
-*
+
 	This exercise demonstrates you how you manipulate strings (character arrays); compute length of a
 	string, as well as working with loops.
 
@@ -62,9 +63,7 @@ int main(void)
 
 	while (fgets(buf, 1000, ptr_file) != NULL)
 	{
-		/* And here do the my_to_upper(…)*/
-		/* printf("Length: %d\t%s\n", line_length, upper); */
-
+		// printf("%d", read_line(fputs(buf, 1000, ptr_file))); 
 		printf("%s", buf);
 	}
 		
@@ -80,5 +79,49 @@ int main(void)
 https://www.cplusplus.com/reference/cstdio/fgets/
 https://www.geeksforgeeks.org/fgets-gets-c-language/
 https://www.tutorialspoint.com/c_standard_library/c_function_fgets.htm
+
+
+
+
+https://www.geeksforgeeks.org/toupper-function-in-c/
+
+// C program to demonstrate
+// example of toupper() function.
+#include <ctype.h>
+#include <stdio.h>
+
+int main()
+{
+	int j = 0;
+	char str[] = "geekforgeeks\n";
+	char ch;
+
+	while (str[j]) {
+		ch = str[j];
+		putchar(toupper(ch));
+		j++;
+	}
+
+	return 0;
+}
+
+
+https://www.tutorialspoint.com/c_standard_library/c_function_toupper.htm
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main () {
+   int i = 0;
+   char c;
+   char str[] = "Tutorials Point";
+
+   while(str[i]) {
+	  putchar (toupper(str[i]));
+	  i++;
+   }
+
+   return(0);
+}
 
 */

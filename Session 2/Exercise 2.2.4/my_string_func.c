@@ -33,6 +33,8 @@ int read_line(char s[])
 *	that into the upper array, in this loop you can also keep a counter to keep track of the line length.
 *
 */
+
+
 void my_to_upper(char* str_in, char* str_out)
 {
 
@@ -44,4 +46,26 @@ void my_to_upper(char* str_in, char* str_out)
 	str_out character array
 	*/
 
+}
+
+
+char* my_toUpper(char* string)
+{
+	for (char* p = string; *p != '\0'; p++)
+	{
+		if (*p >= 'a' && *p <= 'z')  //Only if it's a lower letter
+			*p -= 32;
+	}
+	return string;
+}
+
+
+char* my_toLower(char* string)
+{
+	for (char* p = string; *p != '\0'; p++)
+	{
+		if (*p >= 'A' && *p <= 'Z')  //Only if it's a capital letter
+			*p += 32;
+	}
+	return string;
 }
