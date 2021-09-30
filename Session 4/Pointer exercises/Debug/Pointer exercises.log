@@ -1,0 +1,6 @@
+﻿  main.c
+C:\git\ESW\Session 4\Pointer exercises\main.c(22,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+C:\git\ESW\Session 4\Pointer exercises\main.c(23,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int **'
+C:\git\ESW\Session 4\Pointer exercises\main.c(24,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+C:\git\ESW\Session 4\Pointer exercises\main.c(28,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+  Pointer exercises.vcxproj -> C:\git\ESW\Session 4\Pointer exercises\Debug\Pointer exercises.exe

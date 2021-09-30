@@ -1,1 +1,7 @@
-﻿  Exercise 2.2.4.vcxproj -> E:\GitHub\ESW\Session 2\Exercise 2.2.4\x64\Debug\Exercise 2.2.4.exe
+﻿  main.c
+C:\git\ESW\Session 2\Exercise 2.2.4\main.c(71,34): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\git\ESW\Session 2\Exercise 2.2.4\main.c(39,7): warning C4101: 'line': unreferenced local variable
+C:\git\ESW\Session 2\Exercise 2.2.4\main.c(40,7): warning C4101: 'upper': unreferenced local variable
+  my_string_func.c
+  Generating Code...
+  Exercise 2.2.4.vcxproj -> C:\git\ESW\Session 2\Exercise 2.2.4\x64\Debug\Exercise 2.2.4.exe

@@ -38,7 +38,7 @@ int main(void)
 {
 	char line[MAX_LENGTH];
 	char upper[MAX_LENGTH];
-	// int line_length;
+	// int line_length
 
 
 	// Read txt file
