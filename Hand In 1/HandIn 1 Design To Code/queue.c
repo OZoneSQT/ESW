@@ -2,7 +2,7 @@
 #include "queue.h"
 #include "item.h"
 
-typedef struct QueueNode* link;
+typedef struct QueueNode *link;
 
 struct QueueNode
 {
@@ -14,7 +14,7 @@ static link head, tail;
 
 link NEW(item itm, link next)
 {
-	link x = malloc(sizeof * x);
+	link x = malloc(sizeof (*x));
 	x->itm = itm;
 	x->next = next;
 	return x;
@@ -47,5 +47,5 @@ item QueueGet()
 	link x = head->next;
 	free(head);
 	head = x;
-	return x;
+	return itm;
 }

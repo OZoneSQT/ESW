@@ -1,10 +1,12 @@
-#pragma once
-#include<stdio.h>
+// init item-"object" as a datatype - declared in header file
+typedef struct Item item;
 
-struct item
+// anonymous union inside a struct
+struct Item
 {
-	int number;
-	char* string;
+	union
+	{
+		int number;
+		char* string;
+	};
 };
-
-void newItem(int number, char* string);
