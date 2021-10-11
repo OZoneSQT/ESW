@@ -141,12 +141,14 @@
   <ItemGroup>
     <ClInclude Include="item.h" />
     <ClInclude Include="queue.h" />
-    <ClInclude Include="test.h" />
+    <ClInclude Include="reciver.h" />
+    <ClInclude Include="sender.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="queue.c" />
-    <ClCompile Include="test.c" />
+    <ClCompile Include="reciver.c" />
+    <ClCompile Include="sender.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,6 +4,9 @@
 
 typedef struct QueueNode *link;
 
+static int maxSize = 0;
+static int elementCounter = 0;
+
 struct QueueNode
 {
 	item itm;
@@ -23,6 +26,8 @@ link NEW(item itm, link next)
 void QueueInit(int size)
 {
 	head = NULL;
+	maxSize = size;
+	elementCounter = 0;
 }
 
 int QueueIsEmpty()
@@ -30,11 +35,24 @@ int QueueIsEmpty()
 	return head == NULL;
 }
 
+int QueueIsFull()
+{
+	int result = 0;
+	
+	if (elementCounter >= maxSize)
+	{
+		result = 1;
+	}
+
+	return result;
+}
+
 void QueuePut(item itm)
 {
 	if (head == NULL)
 	{
 		head = (tail = NEW(itm, head));
+		elementCounter++;
 		return;
 	}
 	tail->next = NEW(itm, head);
@@ -47,5 +65,6 @@ item QueueGet()
 	link x = head->next;
 	free(head);
 	head = x;
+	elementCounter--;
 	return itm;
 }

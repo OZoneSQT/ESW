@@ -1,37 +1,20 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include "queue.h"
-#include "test.h"
-
+#include "sender.h"
+#include "reciver.h"
 
 int main(void)
 {
 	int size = 3;
-
-	// item itm;
 	
 	QueueInit(size);
-//	printf("Init Queue to length: %d\n", &size);
 
-	/*
-	QueuePut(getItmA());
-
-
-	QueuePut(getItmB());
-	itm = QueueGet();
-	printf("number = %d and string = %s\n", itm.number, itm.string);
-	itm = QueueGet();
-	printf("number = %d and string = %s\n", itm.number, itm.string);
-	QueuePut(getItmC());
-	QueuePut(getItmD());
-	itm = QueueGet();
-	printf("number = %d and string = %s\n", itm.number, itm.string);
-	QueuePut(getItmE());
-	itm = QueueGet();
-	printf("number = %d and string = %s\n", itm.number, itm.string);
-	itm = QueueGet();
-	printf("number = %d and string = %s\n", itm.number, itm.string);  */
-
+	for(int i = 0; i < 50; i++)
+	{
+		runSender();
+		runReciver();
+	}
 
 	return 0;
 }

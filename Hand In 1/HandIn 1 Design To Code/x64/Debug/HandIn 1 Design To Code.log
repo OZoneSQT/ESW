@@ -1,0 +1,11 @@
+﻿  main.c
+  queue.c
+E:\GitHub\ESW\Hand In 1\HandIn 1 Design To Code\item.h(6,1): error C2011: 'Item': 'struct' type redefinition
+E:\GitHub\ESW\Hand In 1\HandIn 1 Design To Code\item.h(5): message : see declaration of 'Item'
+  reciver.c
+E:\GitHub\ESW\Hand In 1\HandIn 1 Design To Code\reciver.c(9,9): warning C4550: expression evaluates to a function which is missing an argument list
+  sender.c
+E:\GitHub\ESW\Hand In 1\HandIn 1 Design To Code\item.h(6,1): error C2011: 'Item': 'struct' type redefinition
+E:\GitHub\ESW\Hand In 1\HandIn 1 Design To Code\item.h(5): message : see declaration of 'Item'
+E:\GitHub\ESW\Hand In 1\HandIn 1 Design To Code\sender.c(52,9): warning C4550: expression evaluates to a function which is missing an argument list
+  Generating Code...
