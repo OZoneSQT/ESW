@@ -9,13 +9,13 @@ static int elementCounter = 0;
 
 struct QueueNode
 {
-	item itm;
+	struct Item itm;
 	link next;
 };
 
 static link head, tail;
 
-link NEW(item itm, link next)
+link NEW(struct Item itm, link next)
 {
 	link x = malloc(sizeof (*x));
 	x->itm = itm;
@@ -47,7 +47,7 @@ int QueueIsFull()
 	return result;
 }
 
-void QueuePut(item itm)
+void QueuePut(struct Item itm)
 {
 	if (head == NULL)
 	{
@@ -59,9 +59,9 @@ void QueuePut(item itm)
 	tail->next;
 }
 
-item QueueGet()
+struct Item QueueGet()
 {
-	item itm = head->itm;
+	struct Item itm = head->itm;
 	link x = head->next;
 	free(head);
 	head = x;

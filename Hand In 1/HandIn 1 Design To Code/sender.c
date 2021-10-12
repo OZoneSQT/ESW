@@ -3,7 +3,7 @@
 #include "sender.h"
 #include "queue.h"
 
-static item itm;
+static struct Item itm;
 static int id = 0;
 
 int random()

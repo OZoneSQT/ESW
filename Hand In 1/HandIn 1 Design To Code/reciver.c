@@ -2,7 +2,7 @@
 #include "reciver.h"
 #include "queue.h"
 
-static item itm;
+static struct Item itm;
 
 void runReciver()
 {

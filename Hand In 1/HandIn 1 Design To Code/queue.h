@@ -11,7 +11,7 @@ int QueueIsEmpty(void);
 int QueueIsFull();
 
 // puts item in queue, as the tail
-void QueuePut(item);
+void QueuePut(struct Item);
 
 // get the head item from the queue
-item QueueGet();
+struct Item QueueGet();
