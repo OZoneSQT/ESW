@@ -6,9 +6,7 @@ static struct Item itm;
 
 void runReciver()
 {
-	while (!QueueIsEmpty)
-	{
-		QueueGet();
-		printf("Message id: %d content %s\n", itm.number, itm.string);
-	}
+	itm = QueueGet();
+	printf("Message id: %d content %s\n", itm.number, itm.string);
 }
+
