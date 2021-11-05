@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include "FreeRTOS.h"
-#include "task.h"
+// #include "FreeRTOS.h"
+#include "FreeRTOS/Source/include/task.h"
+#include "FreeRTOS/Source/include/FreeRTOS.h"
 
 /* Priorities at which the tasks are created. */
 #define TASK_MY_TASK_PRIORITY			( tskIDLE_PRIORITY + 1 )
@@ -14,66 +15,76 @@
 /* Task Handles */
 TaskHandle_t _taskSecondHandle = NULL;
 
-//Semaphore/Mutex
-// xSemaphoreHandle xSemaphoreMutex;
-
-
-
 
 // --------------------------------------------------------------------------------------
+xSemaphoreHandle xSemaphoreMutex_A = NULL;
 void taskMyTask(void* pvParameters)
 {
-//	xSemaphoreMutex = xSemaphoreCreateMutex();
+	xSemaphoreMutex_A = xSemaphoreCreateMutex();
+	xSemaphoreTake(xSemaphoreMutex_A, portMAX_DELAY);
+
 	// Remove compiler warnings.
 	(void)pvParameters;
 
-//	if (xSemaphoreMutex == NULL) {
 		for (;;)
 		{
 			vTaskDelay(pdMS_TO_TICKS(200));
 			puts("Hi from My Task 1");
 		}
-	//}
-//	free(xSemaphoreMutex);
+	
+	xSemaphoreGive(xSemaphoreMutex_A);
+
 }
 
 // --------------------------------------------------------------------------------------
+xSemaphoreHandle xSemaphoreMutex_B = NULL;
 void taskMySeccondTask(void* pvParameters)
 {
-//	xSemaphoreMutex = xSemaphoreCreateMutex();
+	
+	xSemaphoreTake(xSemaphoreMutex_B, portMAX_DELAY);
+
 	// Remove compiler warnings.
 	(void)pvParameters;
 
-//	if (xSemaphoreMutex == NULL) {
+
 		for (;;)
 		{
 			vTaskDelay(pdMS_TO_TICKS(200));
 			puts("Hi from My Task 2");
 		}
-	//}
-//free(xSemaphoreMutex);
+
+	xSemaphoreGive(xSemaphoreMutex_B);
+
 }
 
 // --------------------------------------------------------------------------------------
+xSemaphoreHandle xSemaphoreMutex_C = NULL;
 void taskMyThirdTask(void* pvParameters)
 {
-//	xSemaphoreMutex = xSemaphoreCreateMutex();
+	
+	xSemaphoreTake(xSemaphoreMutex_C, portMAX_DELAY);
+
 	// Remove compiler warnings.
 	(void)pvParameters;
 
-//	if (xSemaphoreMutex == NULL) {
 		for (;;)
 		{
 			vTaskDelay(pdMS_TO_TICKS(200));
 			puts("Hi from My Task 3");
 		}
-//	}
-//	free(xSemaphoreMutex);
+	
+	xSemaphoreGive(xSemaphoreMutex_C);
 }
 
 // --------------------------------------------------------------------------------------
 void main(void)
 {
+	//	Create mutex
+	
+	xSemaphoreMutex_B = xSemaphoreCreateMutex();
+	xSemaphoreMutex_C = xSemaphoreCreateMutex();
+
+
 	/* Create the task, not storing the handle. */
 	xTaskCreate(
 		taskMyTask,       /* Function that implements the task. */
