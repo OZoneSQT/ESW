@@ -68,7 +68,7 @@ void task1( void *pvParameters )
 		vTaskDelay(10);
 		//xSemaphoreGive(xTestSemaphore);
 
-		PORTA ^= _BV(PA0);
+		PORTA ^= _BV(PA0);	// Pin D22
 	}
 }
 
@@ -83,7 +83,7 @@ void task2( void *pvParameters )
 	for(;;)
 	{
 		vTaskDelay(50);
-		PORTA ^= _BV(PA7);
+		PORTA ^= _BV(PA7);	// Pin D29
 	}
 }
 

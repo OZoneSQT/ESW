@@ -1,9 +1,13 @@
 #include "LinkedList.h"
+ 
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdint.h>
 
-#define ListReturnCode;
 
+typedef struct List {
+	node* head;
+} List;
 
 void create()
 {
@@ -29,12 +33,13 @@ ListReturnCode removeItem(void* item)
 	return ERROR;
 }
 
-uint16_t noOfitems()
+uint16_t noOfItems()
 {
 	return 4;
 }
 
 void* getItem(uint16_t index)
 {
-	return nullptr;
+
+	return noOfItems();
 }

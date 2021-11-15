@@ -1,34 +1,37 @@
 #pragma once
+
 #include <stdint.h>
 
-enum ListReturnCode {
+typedef enum ListReturnCode {
     OK = 0,
     EMPTY,
     NOT_FOUND,
-    NULL,
+    NUL,
     ERROR,
-};
+} ListReturnCode;
 
-typedef struct Item* item 
+typedef struct Item* item;
+struct Item
 {
-    // Anonymous union
+    // Anonymous union 
     union {
         void* data_a;
-        void* data_b;
+        void* data_b;  
     };
-}
+};
 
-typedef struct Node* node
+typedef struct Node* node;
+struct Node
 {
-    void* item;
-    uint16_t index;
-    Node* next;
-}
+    void* content;
+    node* next;
+};
 
 void create();
 ListReturnCode destroy();
 ListReturnCode addItem(void* item);
 ListReturnCode getItem(void** item, uint16_t index);
 ListReturnCode removeItem(void* item);
-uint16_t noOfitems();
+uint16_t noOfItems();
 void* getItem(uint16_t index);
+
