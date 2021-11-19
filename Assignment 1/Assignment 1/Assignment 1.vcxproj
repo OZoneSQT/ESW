@@ -142,11 +142,17 @@
     <ClCompile Include="LinkedList.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Student.c" />
+    <ClCompile Include="StudentHandler.c" />
+    <ClCompile Include="StudentListAdapter.c" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Student.h" />
+    <ClInclude Include="StudentHandler.h" />
+    <ClInclude Include="StudentList.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

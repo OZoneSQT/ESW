@@ -15,7 +15,12 @@ static Node* _findTail(Node head)
 }
 
 static uint16_t _countToTail(Node head) {
-	if (head->next == NULL) {
+    if (head == NULL)
+    {
+        return 0;
+    }
+    else if (head->next == NULL) 
+    {
 		return 1;
 	}
 	else {
@@ -187,4 +192,3 @@ uint16_t noOfitems()
 {
     return countToTail(head);
 }
-
