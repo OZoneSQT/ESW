@@ -1,40 +1,190 @@
 #include "LinkedList.h"
 #include <stdlib.h>
-#include <stdio.h>
 
-#define ListReturnCode;
+static Node* head;
 
-
-void create()
+static Node* _findTail(Node head)
 {
+	if (!head->next)
+	{
+		return head;
+	}
+	else {
+		return _findTail(head->next);
+	}
+}
+
+static uint16_t _countToTail(Node head) {
+	if (head->next == NULL) {
+		return 1;
+	}
+	else {
+		return _countToTail(head->next) + 1;
+	}
+}
+
+static Node* _findNodeByIndex(Node head, uint16_t index) {
+    if (index != 0 && head->next) {
+        return _findNodeByIndex(head->next, index - 1);
+    }
+    else if (head) {
+        return head;
+    }
+    else {
+        return NULL;
+    }
+}
+
+static Node* _findNodeByItem(Node head, void** itm) {
+    if (head->item == *itm) {       //This works for ints
+        return head;
+    }
+    else if (head->item == itm) {   //This if statement works for structs and strings
+        return head;
+    }
+    else if (!head->next) {
+        return NULL;
+    }
+    else {
+        return _findNodeByItem(head->next, itm);
+    }
+}
+
+static Node* _findParentNode(Node head, Node* childNode) {
+    if (head->next == childNode) {
+        return head;
+    }
+    else if (!head->next) {
+        return NULL;
+    }
+    else {
+        return _findParentNode(head->next, childNode);
+    }
+}
+
+static ListReturnCode _deleteNodesCascade(Node head) {
+    if (!head) {
+        return OK;
+    }
+    else {
+        if (head->next) {
+            Node* next = head->next;
+            free(head->item);
+            free(head);
+            return _deleteNodesCascade(next);
+        }
+        else {
+            free(head->item);
+            free(head);
+            return OK;
+        }
+    }
+}
+
+void create() {
+	head = NULL;
 }
 
 ListReturnCode destroy()
 {
-	return OK;
+    return _deleteNodesCascade(head);
 }
 
-ListReturnCode addItem(void* item)
+ListReturnCode addItem(void* itm)
 {
-	return ERROR;
+    Node newNode = calloc(sizeof(Node), 1);
+    newNode->item = itm;
+    newNode->next = NULL;
+
+    if (head != NULL)
+    {
+        Node tail = _findTail(head);
+        tail->next = newNode;
+        return OK;
+    } 
+    else if (head == NULL)
+    {
+        head = newNode;
+        return OK;
+    }
+    else
+    {
+        return ERROR;
+    }
+    
 }
 
-ListReturnCode getItem(void** item, uint16_t index)
+static Node* _findNodeByIndex(Node head, uint16_t index) 
 {
-	return NULL;
-}
+    Node tempList;
 
-ListReturnCode removeItem(void* item)
-{
-	return ERROR;
-}
+    for (uint16_t i = 0; i < index; i++)
+    {
+        tempList = _findNodeByIndex(head, i);
+    }
 
-uint16_t noOfitems()
-{
-	return 4;
+    return tempList;
 }
 
 void* getItem(uint16_t index)
 {
-	return nullptr;
+    Node tempNode = _findNodeByIndex(head, index);
+    return tempNode->item;
 }
+
+static Node* _findNodeByItem(Node head, void** itm) {
+    if (head->item == *itm) {       //This works for ints
+        return head;
+    }
+    else if (head->item == itm) {   //This if statement works for structs and strings
+        return head;
+    }
+    else if (!head->next) {
+        return NULL;
+    }
+    else {
+        return _findNodeByItem(head->next, itm);
+    }
+}
+
+void* getItem(void** itm)
+{
+    Node data = findNodeByItem(head, itm);
+    return data->item;
+}
+
+ListReturnCode removeItem(void* itm) {
+    Node nodeToDelete = _findNodeByItem(head, itm);
+    Node childNode = nodeToDelete->next;
+    Node parentNode = _findParentNode(nodeToDelete, itm);
+
+    if (head == NULL)
+    {
+        return ERROR;
+    }
+    else if (nodeToDelete == NULL)
+    {
+        return NOT_FOUND;
+    }
+    else if (childNode == NULL)
+    {
+        free(nodeToDelete);
+        parentNode->next = NULL;
+        free(parentNode);
+        return OK;
+    }
+    else if (childNode == NULL && parentNode != )
+    {
+        free(nodeToDelete);
+        parentNode->next = childNode;
+        free(parentNode);
+        free(childNode);
+        return OK;
+    }
+}
+
+uint16_t noOfitems()
+{
+    return countToTail(head);
+}
+

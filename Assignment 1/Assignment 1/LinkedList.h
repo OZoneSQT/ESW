@@ -1,34 +1,25 @@
 #pragma once
 #include <stdint.h>
 
-enum ListReturnCode {
-    OK = 0,
-    EMPTY,
-    NOT_FOUND,
-    NULL,
-    ERROR,
-};
+typedef enum listReturnCode {
+    OK = 0,     // Everything OK
+    EMPTY,      // List Empty
+    NOT_FOUND,  // Item not found
+    NULLL,      // List pointer is null, changed to nulll
+    ERROR,      // Function could not be completed due to memory limit
+} ListReturnCode;
 
-typedef struct Item* item 
-{
-    // Anonymous union
-    union {
-        void* data_a;
-        void* data_b;
-    };
-}
-
-typedef struct Node* node
+typedef struct node* Node;
+struct node
 {
     void* item;
-    uint16_t index;
     Node* next;
-}
+};
 
 void create();
 ListReturnCode destroy();
 ListReturnCode addItem(void* item);
-ListReturnCode getItem(void** item, uint16_t index);
+void* getItem(uint16_t index);
+void* getItem(void** item);
 ListReturnCode removeItem(void* item);
 uint16_t noOfitems();
-void* getItem(uint16_t index);
