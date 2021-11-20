@@ -16,12 +16,6 @@
     <Filter Include="test">
       <UniqueIdentifier>{ebc9029d-ef77-4489-91b1-ab82a1a493c5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="StudentHandler">
-      <UniqueIdentifier>{4ddc9a03-f9d3-42c6-9907-92babf3425b9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="LinkedList">
-      <UniqueIdentifier>{edd83983-6983-47b9-8df1-b7a02d90a0dd}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.c">
@@ -34,16 +28,7 @@
       <Filter>test</Filter>
     </ClCompile>
     <ClCompile Include="LinkedList.c">
-      <Filter>LinkedList</Filter>
-    </ClCompile>
-    <ClCompile Include="Student.c">
-      <Filter>StudentHandler</Filter>
-    </ClCompile>
-    <ClCompile Include="StudentHandler.c">
-      <Filter>StudentHandler</Filter>
-    </ClCompile>
-    <ClCompile Include="StudentListAdapter.c">
-      <Filter>StudentHandler</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -51,16 +36,7 @@
       <Filter>test</Filter>
     </ClInclude>
     <ClInclude Include="LinkedList.h">
-      <Filter>LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="Student.h">
-      <Filter>StudentHandler</Filter>
-    </ClInclude>
-    <ClInclude Include="StudentHandler.h">
-      <Filter>StudentHandler</Filter>
-    </ClInclude>
-    <ClInclude Include="StudentList.h">
-      <Filter>StudentHandler</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
