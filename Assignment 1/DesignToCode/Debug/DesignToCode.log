@@ -1,0 +1,143 @@
+﻿  humidityDriver.c
+E:\GitHub\ESW\Assignment 1\DesignToCode\Driver\humidityDriver.c(8,7): warning C4013: 'srand' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\DesignToCode\Driver\humidityDriver.c(13,14): warning C4013: 'rand' undefined; assuming extern returning int
+  tempDriver.c
+E:\GitHub\ESW\Assignment 1\DesignToCode\Driver\tempDriver.c(8,7): warning C4013: 'srand' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\DesignToCode\Driver\tempDriver.c(13,15): warning C4013: 'rand' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\DesignToCode\Driver\tempDriver.c(14,33): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  HealthHandler.c
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(10,29): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(10,22): warning C4024: 'list_getItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(10,36): warning C4047: 'function': 'void **' differs in levels of indirection from 'room_t **'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(10,31): warning C4022: 'list_getItem': pointer mismatch for actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(11,65): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(11,61): warning C4024: 'room_getLocation': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(11,85): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(11,81): warning C4024: 'room_getArea': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(11,134): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(11,130): warning C4024: 'room_getRoomHealth': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(21,49): warning C4047: '=': 'list_t *' differs in levels of indirection from 'list_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(27,51): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(27,44): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(30,33): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(30,26): warning C4024: 'list_getItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(31,26): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(31,22): warning C4024: 'room_destroy': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(38,35): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(38,28): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(40,33): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(40,26): warning C4024: 'list_addItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(46,51): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(46,44): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+  Humidity.c
+  main.c
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(10,5): error C2059: syntax error: 'constant'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(25,21): error C2061: syntax error: identifier 'list_destroy'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(25,21): error C2059: syntax error: ';'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(25,41): error C2059: syntax error: '<parameter-list>'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(26,21): error C2061: syntax error: identifier 'list_addItem'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(26,21): error C2059: syntax error: ';'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(26,41): error C2059: syntax error: '<parameter-list>'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(27,21): error C2061: syntax error: identifier 'list_getItem'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(27,21): error C2059: syntax error: ';'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(27,41): error C2059: syntax error: '<parameter-list>'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(28,21): error C2061: syntax error: identifier 'list_removeItem'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(28,21): error C2059: syntax error: ';'
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(28,44): error C2059: syntax error: '<parameter-list>'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(14,48): warning C4047: '=': 'room_t *' differs in levels of indirection from 'room_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(16,35): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(16,25): warning C4024: 'room_addTemperature': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(16,39): warning C4047: 'function': 'temperature_t' differs in levels of indirection from 'temperature_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(16,37): warning C4024: 'room_addTemperature': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(18,35): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(18,25): warning C4024: 'room_addTemperature': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(18,39): warning C4047: 'function': 'temperature_t' differs in levels of indirection from 'temperature_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(18,37): warning C4024: 'room_addTemperature': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(20,32): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(20,22): warning C4024: 'room_addHumidity': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(20,36): warning C4047: 'function': 'humidity_t' differs in levels of indirection from 'humidity_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(20,34): warning C4024: 'room_addHumidity': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(21,40): warning C4047: 'function': 'healthHandler_t' differs in levels of indirection from 'healthHandler_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(21,27): warning C4024: 'healthHandler_addRoom': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(21,52): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(21,42): warning C4024: 'healthHandler_addRoom': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(19,1): warning C4047: 'initializing': 'humidity_t *' differs in levels of indirection from 'humidity_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(26,41): warning C4047: '=': 'room_t *' differs in levels of indirection from 'room_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(28,32): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(28,25): warning C4024: 'room_addTemperature': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(28,36): warning C4047: 'function': 'temperature_t' differs in levels of indirection from 'temperature_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(28,34): warning C4024: 'room_addTemperature': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(30,29): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(30,22): warning C4024: 'room_addHumidity': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(30,33): warning C4047: 'function': 'humidity_t' differs in levels of indirection from 'humidity_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(30,31): warning C4024: 'room_addHumidity': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(31,40): warning C4047: 'function': 'healthHandler_t' differs in levels of indirection from 'healthHandler_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(31,27): warning C4024: 'healthHandler_addRoom': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(31,49): warning C4047: 'function': 'room_t' differs in levels of indirection from 'room_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(31,42): warning C4024: 'healthHandler_addRoom': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(29,1): warning C4047: 'initializing': 'humidity_t *' differs in levels of indirection from 'humidity_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(36,43): warning C4047: '=': 'healthHandler_t *' differs in levels of indirection from 'healthHandler_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(43,5): error C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(48,51): warning C4047: 'function': 'healthHandler_t' differs in levels of indirection from 'healthHandler_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\main.c(48,38): warning C4024: 'healthHandler_showBuildingHealth': different types for formal and actual parameter 1
+  Room.c
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(39,40): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(39,32): warning C4024: 'strncpy_s': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(39,62): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(39,59): warning C4024: 'strncpy_s': different types for formal and actual parameter 3
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(39,14): error C2198: 'strncpy_s': too few arguments for call
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(42,53): warning C4047: '=': 'list_t *' differs in levels of indirection from 'list_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(43,50): warning C4047: '=': 'list_t *' differs in levels of indirection from 'list_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(48,61): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(48,44): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(51,43): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(51,26): warning C4024: 'list_getItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(52,34): warning C4047: 'function': 'humidity_t' differs in levels of indirection from 'humidity_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(52,26): warning C4024: 'humidity_destroy': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(54,64): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(54,44): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(57,46): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(57,26): warning C4024: 'list_getItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(58,40): warning C4047: 'function': 'temperature_t' differs in levels of indirection from 'temperature_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(58,29): warning C4024: 'temperature_destroy': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(65,48): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(65,28): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(67,46): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(67,26): warning C4024: 'list_addItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(73,45): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(73,28): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(75,43): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(75,26): warning C4024: 'list_addItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(82,64): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(82,44): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(85,46): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(85,26): warning C4024: 'list_getItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(85,60): warning C4047: 'function': 'void **' differs in levels of indirection from 'temperature_t **'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(85,48): warning C4022: 'list_getItem': pointer mismatch for actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(86,41): warning C4047: 'function': 'temperature_t' differs in levels of indirection from 'temperature_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(86,30): warning C4024: 'temperature_meassure': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(87,76): warning C4047: 'function': 'temperature_t' differs in levels of indirection from 'temperature_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(87,65): warning C4024: 'temperature_getTemperature': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(91,61): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(91,44): warning C4024: 'list_noOfItems': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(94,43): warning C4047: 'function': 'list_t' differs in levels of indirection from 'list_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(94,26): warning C4024: 'list_getItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(94,54): warning C4047: 'function': 'void **' differs in levels of indirection from 'humidity_t **'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(94,45): warning C4022: 'list_getItem': pointer mismatch for actual parameter 2
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(95,35): warning C4047: 'function': 'humidity_t' differs in levels of indirection from 'humidity_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(95,27): warning C4024: 'humidity_meassure': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(96,64): warning C4047: 'function': 'humidity_t' differs in levels of indirection from 'humidity_t *'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(96,56): warning C4024: 'humidity_getHumidity': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(96,65): warning C4244: '=': conversion from 'float' to 'uint8_t', possible loss of data
+E:\GitHub\ESW\Assignment 1\DesignToCode\Room.c(104,32): warning C4090: 'return': different 'const' qualifiers
+  Temperature.c
+E:\GitHub\ESW\Assignment 1\DesignToCode\Temperature.c(8,34): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+E:\GitHub\ESW\Assignment 1\DesignToCode\Temperature.c(20,27): warning C4047: 'return': 'temperature_t *' differs in levels of indirection from 'temperature_t'
+E:\GitHub\ESW\Assignment 1\DesignToCode\Temperature.c(37,20): warning C4305: '*=': truncation from 'double' to 'float'
+  List.c
+E:\GitHub\ESW\Assignment 1\DesignToCode\util\List.h(1,13): warning C4081: expected 'newline'; found ';'
+  Generating Code...
+E:\GitHub\ESW\Assignment 1\DesignToCode\HealthHandler.c(30): error C4700: uninitialized local variable 'room' used

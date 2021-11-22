@@ -139,13 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedList.c" />
+    <ClCompile Include="list.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="list.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>

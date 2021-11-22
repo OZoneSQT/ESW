@@ -1,0 +1,62 @@
+﻿  list.c
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.h(32,27): warning C4028: formal parameter 1 different from declaration
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(10,14): warning C4047: 'return': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(13,30): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(13,24): warning C4024: '_findTail': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(27,33): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(27,27): warning C4024: '_countToTail': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(33,43): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(33,37): warning C4024: '_findNodeByIndex': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(36,20): warning C4047: 'return': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(45,20): warning C4047: 'return': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(48,20): warning C4047: 'return': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(54,42): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(54,36): warning C4024: '_findNodeByItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(60,20): warning C4047: 'return': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(66,42): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(66,36): warning C4024: '_findParentNode': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(79,44): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(79,40): warning C4024: '_deleteNodesCascade': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(95,36): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(95,32): warning C4024: '_deleteNodesCascade': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(106,35): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(106,31): warning C4024: '_findTail': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(107,29): warning C4047: '=': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(112,23): warning C4047: '=': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(106,1): warning C4047: 'initializing': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(122,14): error C2084: function 'Node *_findNodeByIndex(Node,uint16_t)' already has a body
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(31): message : see previous definition of '_findNodeByIndex'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(128,45): warning C4047: '=': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(131,20): warning C4047: 'return': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(134,24): warning C4028: formal parameter 1 different from declaration
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(136,42): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(136,38): warning C4024: '_findNodeByIndex': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(136,1): warning C4047: 'initializing': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(140,14): error C2084: function 'Node *_findNodeByItem(Node,void **)' already has a body
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(43): message : see previous definition of '_findNodeByItem'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(142,20): warning C4047: 'return': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(145,20): warning C4047: 'return': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(151,42): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(151,36): warning C4024: '_findNodeByItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(155,7): error C2084: function 'void *getItem(uint16_t)' already has a body
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(134): message : see previous definition of 'getItem'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(157,31): warning C4013: 'findNodeByItem' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(157,1): warning C4047: 'initializing': 'Node' differs in levels of indirection from 'int'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(162,45): warning C4047: 'function': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(162,41): warning C4024: '_findNodeByItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(181,49): error C2059: syntax error: ')'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(184,37): warning C4047: '=': 'Node *' differs in levels of indirection from 'Node'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(162,5): warning C4047: 'initializing': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(163,5): warning C4047: 'initializing': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(164,5): warning C4047: 'initializing': 'Node' differs in levels of indirection from 'Node *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.c(189,1): error C2059: syntax error: '}'
+  Main.c
+E:\GitHub\ESW\Assignment 1\Assignment 1\list.h(32,27): warning C4028: formal parameter 1 different from declaration
+E:\GitHub\ESW\Assignment 1\Assignment 1\Main.c(9,12): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'void *'
+E:\GitHub\ESW\Assignment 1\Assignment 1\Main.c(17,23): warning C4022: 'printInt': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\Main.c(19,25): warning C4047: 'function': 'void **' differs in levels of indirection from 'char [2]'
+E:\GitHub\ESW\Assignment 1\Assignment 1\Main.c(19,22): warning C4022: 'getItem': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\Main.c(20,16): warning C4022: 'removeItem': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\Main.c(21,13): warning C4022: 'addItem': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\Assignment 1\Main.c(22,23): warning C4022: 'printInt': pointer mismatch for actual parameter 1
+  Generating Code...

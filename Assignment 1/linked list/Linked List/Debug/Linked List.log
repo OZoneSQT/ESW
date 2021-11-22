@@ -1,0 +1,7 @@
+﻿  main.c
+E:\GitHub\ESW\Assignment 1\linked list\Linked List\main.c(17,19): warning C4022: 'addItem': pointer mismatch for actual parameter 2
+E:\GitHub\ESW\Assignment 1\linked list\Linked List\main.c(18,19): warning C4022: 'addItem': pointer mismatch for actual parameter 2
+E:\GitHub\ESW\Assignment 1\linked list\Linked List\main.c(19,19): warning C4022: 'addItem': pointer mismatch for actual parameter 2
+E:\GitHub\ESW\Assignment 1\linked list\Linked List\main.c(20,19): warning C4022: 'addItem': pointer mismatch for actual parameter 2
+E:\GitHub\ESW\Assignment 1\linked list\Linked List\main.c(21,19): warning C4022: 'addItem': pointer mismatch for actual parameter 2
+  Linked List.vcxproj -> E:\GitHub\ESW\Assignment 1\linked list\Linked List\Debug\Linked List.exe

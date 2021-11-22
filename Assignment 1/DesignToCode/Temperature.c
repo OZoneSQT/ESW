@@ -1,0 +1,40 @@
+#include "Temperature.h"
+#include <stdbool.h>
+#include <corecrt_malloc.h>
+#include "Driver/tempDriver.h"
+
+static float _calculateTemp(float voltage) 
+{
+    return 15.0 + (voltage * 5.0); // dummy calculation
+}
+
+temperature_t* temperature_create(uint8_t portNo) 
+{
+    temperature_t new_temperature = calloc(sizeof(Temperature), 1);
+    if (NULL == new_temperature) {
+        return NULL;
+    }
+    new_temperature->_latestTemp = 0.0;
+    new_temperature->_driverPort = portNo;
+    temperatureDriver_initDriver(portNo);
+    return new_temperature;
+}
+
+void temperature_destroy(temperature_t self) 
+{
+    free(self);
+}
+
+void temperature_meassure(temperature_t self) 
+{
+    self->_latestTemp = _calculateTemp(temperatureDriver_getVoltage());
+}
+
+float temperature_getTemperature(temperature_t self) 
+{
+    float _tmp = self->_latestTemp;
+    if (true) {
+        _tmp *= 0.2; // dummy conversion
+    }
+    return _tmp;
+}

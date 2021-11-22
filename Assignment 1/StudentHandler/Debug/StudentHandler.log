@@ -1,0 +1,108 @@
+﻿  main.c
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.h(6,5): error C2061: syntax error: identifier 'studentList_t'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.h(7,1): error C2059: syntax error: '}'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(6,5): error C2061: syntax error: identifier 'list_t'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(7,1): error C2059: syntax error: '}'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(8,11): warning C4013: 'printf' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(11,77): warning C4047: '=': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(13,77): warning C4047: '=': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(15,77): warning C4047: '=': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(18,48): warning C4013: 'studentList_createStudentList' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(18,64): warning C4013: 'list_createList' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(18,67): warning C4047: '=': 'studentList_t' differs in levels of indirection from 'int'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(21,55): warning C4047: 'function': 'student_t *' differs in levels of indirection from 'student_t'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(21,47): warning C4024: 'studentHandler_addStudent': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(22,55): warning C4047: 'function': 'student_t *' differs in levels of indirection from 'student_t'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(22,47): warning C4024: 'studentHandler_addStudent': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(23,55): warning C4047: 'function': 'student_t *' differs in levels of indirection from 'student_t'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(23,47): warning C4024: 'studentHandler_addStudent': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(28,36): warning C4047: 'function': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(28,23): warning C4024: 'student_printInfo': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(30,36): warning C4047: 'function': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(30,23): warning C4024: 'student_printInfo': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(33,42): warning C4013: 'studentList_noOfStudents' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\StudentHandler\main.c(35,30): warning C4013: 'studentList_removeStudent' undefined; assuming extern returning int
+  Student.c
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(11,17): warning C4047: 'return': 'student_t *' differs in levels of indirection from 'int'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(13,48): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(13,39): warning C4024: 'strncpy_s': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(13,84): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(13,81): warning C4024: 'strncpy_s': different types for formal and actual parameter 3
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(13,14): error C2198: 'strncpy_s': too few arguments for call
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(14,46): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(14,38): warning C4024: 'strncpy_s': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(14,82): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(14,79): warning C4024: 'strncpy_s': different types for formal and actual parameter 3
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(14,14): error C2198: 'strncpy_s': too few arguments for call
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(16,52): warning C4047: 'function': 'rsize_t' differs in levels of indirection from 'char *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(16,41): warning C4024: 'strncpy_s': different types for formal and actual parameter 2
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(16,88): warning C4047: 'function': 'const char *' differs in levels of indirection from 'unsigned int'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(16,85): warning C4024: 'strncpy_s': different types for formal and actual parameter 3
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(16,14): error C2198: 'strncpy_s': too few arguments for call
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.c(17,23): warning C4047: 'return': 'student_t *' differs in levels of indirection from 'Student *'
+  StudentHandler.c
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.h(6,5): error C2061: syntax error: identifier 'studentList_t'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.h(7,1): error C2059: syntax error: '}'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(6,5): error C2061: syntax error: identifier 'list_t'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(7,1): error C2059: syntax error: '}'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(9,71): error C2065: 'StudentHandler': undeclared identifier
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(13,25): error C2037: left of 'studentList' specifies undefined struct/union 'StudentHandler'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(18,92): warning C4047: 'function': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(18,85): warning C4024: 'student_getId': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(19,36): warning C4047: 'function': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(19,23): warning C4024: 'student_printInfo': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(23,49): warning C4013: 'studentList_noOfStudents' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(23,56): error C2037: left of 'studentList' specifies undefined struct/union 'StudentHandler'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(24,52): warning C4013: 'studentList_getStudent' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(24,59): error C2037: left of 'studentList' specifies undefined struct/union 'StudentHandler'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(25,34): warning C4047: 'function': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(25,27): warning C4024: 'student_printInfo': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(24,1): warning C4047: 'initializing': 'student_t *' differs in levels of indirection from 'int'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(31,56): error C2037: left of 'studentList' specifies undefined struct/union 'StudentHandler'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(32,48): error C2037: left of 'studentList' specifies undefined struct/union 'StudentHandler'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(32,63): warning C4047: '=': 'student_t *' differs in levels of indirection from 'int'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(33,34): warning C4047: 'function': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(33,27): warning C4024: 'student_getId': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(42,56): error C2037: left of 'studentList' specifies undefined struct/union 'StudentHandler'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(43,48): error C2037: left of 'studentList' specifies undefined struct/union 'StudentHandler'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(43,63): warning C4047: '=': 'student_t *' differs in levels of indirection from 'int'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(44,57): warning C4047: 'function': 'student_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(44,50): warning C4024: 'student_getLastName': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(52,27): warning C4013: 'studentList_addStudent' undefined; assuming extern returning int
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentHandler.c(52,34): error C2037: left of 'studentList' specifies undefined struct/union 'StudentHandler'
+  StudentList.c
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\Student.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(6,5): error C2061: syntax error: identifier 'list_t'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.h(7,1): error C2059: syntax error: '}'
+E:\GitHub\ESW\Assignment 1\StudentHandler\List.h(1,13): warning C4081: expected 'newline'; found ';'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(12,22): error C2037: left of 'adaptee' specifies undefined struct/union 'StudentList'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(17,44): error C2037: left of 'adaptee' specifies undefined struct/union 'StudentList'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(17,60): warning C4047: 'function': 'list_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(17,53): warning C4024: 'list_addItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(17,37): error C2198: 'list_addItem': too few arguments for call
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(19,14): warning C4022: 'free': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(23,14): warning C4022: 'free': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(30,44): error C2037: left of 'adaptee' specifies undefined struct/union 'StudentList'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(30,61): warning C4047: 'function': 'list_t' differs in levels of indirection from 'student_t **'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(30,53): warning C4024: 'list_getItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(30,63): warning C4022: 'list_getItem': pointer mismatch for actual parameter 2
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(30,37): error C2198: 'list_getItem': too few arguments for call
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(32,14): warning C4022: 'free': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(36,14): warning C4022: 'free': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(42,47): error C2037: left of 'adaptee' specifies undefined struct/union 'StudentList'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(42,63): warning C4047: 'function': 'list_t' differs in levels of indirection from 'student_t *'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(42,56): warning C4024: 'list_removeItem': different types for formal and actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(42,40): error C2198: 'list_removeItem': too few arguments for call
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(44,14): warning C4022: 'free': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(48,14): warning C4022: 'free': pointer mismatch for actual parameter 1
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(54,33): error C2037: left of 'adaptee' specifies undefined struct/union 'StudentList'
+E:\GitHub\ESW\Assignment 1\StudentHandler\StudentList.c(54,26): error C2198: 'list_noOfItems': too few arguments for call
+  Generating Code...
