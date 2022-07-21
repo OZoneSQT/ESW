@@ -10,7 +10,8 @@ int main(void)
 
 	int result = power(x, y);
 
-	printf("%d\t^\t%d\t = \t%d\n", x, y, result);
+	// '\t' is called escape sequence(a character) which represent the “tab”
+	printf("%d\t^\t%d\t = \t%d\n", x, y, result);	
 
 	return 0;
 }

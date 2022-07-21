@@ -87,7 +87,6 @@ void task2( void *pvParameters )
 	}
 }
 
-
 /*-----------------------------------------------------------*/
 int main(void)
 {
@@ -98,8 +97,5 @@ int main(void)
 	vTaskStartScheduler(); // initialise and run the freeRTOS scheduler. Execution should never return here.
 
 	/* Replace with your application code */
-	while (1)
-	{
-	}
+	while (1) {}
 }
-
